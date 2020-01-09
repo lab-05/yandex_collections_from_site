@@ -45,7 +45,7 @@ print('Количество адресов - ', len(urls))
 myname = 'Плитка '+bsObj.h1.text
 desc = 'Плитка '+bsObj.h1.text+' это роскошный вариант для отделки ванной прихожей или кухни в доме.'
 
-#логинимся в яндекс вариант 1
+#логин в яндекс вариант 1
 def login_yandex(aothurl):
     driver.get(aothurl)
     driver.find_element_by_id('passp-field-login').send_keys(login)
@@ -61,7 +61,7 @@ def login_yandex(aothurl):
 
 
 
-#логинимся в яндекс вариант 2 (через куки)
+#логин в яндекс вариант 2 (через куки)
 def login_yandex2(hosturl):
     cookies = pickle.load(open("cookies.pkl", "rb"))
     driver.get(hosturl)
